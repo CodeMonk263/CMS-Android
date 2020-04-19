@@ -30,18 +30,18 @@ import java.util.List;
 
 import app.Constants;
 import crux.bphc.cms.R;
-import helper.ClickListener;
-import helper.CourseDataHandler;
-import helper.CourseRequestHandler;
-import helper.HtmlTextView;
-import helper.ModulesAdapter;
-import helper.MyFileManager;
-import helper.Util;
-import set.CourseSection;
-import set.Module;
-import set.forum.Discussion;
+import crux.bphc.cms.helper.ClickListener;
+import crux.bphc.cms.helper.CourseDataHandler;
+import crux.bphc.cms.helper.CourseRequestHandler;
+import crux.bphc.cms.helper.HtmlTextView;
+import crux.bphc.cms.helper.ModulesAdapter;
+import crux.bphc.cms.helper.MyFileManager;
+import crux.bphc.cms.helper.Util;
+import crux.bphc.cms.models.CourseSection;
+import crux.bphc.cms.models.Module;
+import crux.bphc.cms.models.forum.Discussion;
 
-import static helper.MyFileManager.DATA_DOWNLOADED;
+import static crux.bphc.cms.helper.MyFileManager.DATA_DOWNLOADED;
 
 /**
  * Created by SKrPl on 12/21/16.
@@ -268,7 +268,7 @@ public class CourseSectionFragment extends Fragment {
 
             // The first object in the array is the full html description
             // The second represents the number of characters to be shown before the text is truncated.
-            // The value is calculated and assigned when the text is set in makeTextViewResizable
+            // The value is calculated and assigned when the text is crux.bphc.cms.set in makeTextViewResizable
             textView.setTag(new Object[] {descriptionWithOutExtraSpace, -1});
 
             makeTextViewResizable(textView, maxDescriptionLines, "Show More", true);
@@ -395,7 +395,7 @@ public class CourseSectionFragment extends Fragment {
     /**
      * Associates a <code>ClickableSpan</code> with <code>spannableText</code>
      * @param spannableStringBuilder The SpannableStringBuilder to which the clickable span is to be added
-     * @param description The TextView to which the SpannableString will be set
+     * @param description The TextView to which the SpannableString will be crux.bphc.cms.set
      * @param spannableText The text to which the span should be assigned to
      * @param viewMore Whether clicking the span results in more text being visible or not
      * @return

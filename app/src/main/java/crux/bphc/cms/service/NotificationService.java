@@ -9,7 +9,6 @@ import android.app.job.JobService;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.util.Log;
@@ -19,21 +18,20 @@ import androidx.core.app.NotificationCompat;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import app.Constants;
 import crux.bphc.cms.R;
-import crux.bphc.cms.TokenActivity;
-import helper.CourseDataHandler;
-import helper.CourseRequestHandler;
-import helper.UserAccount;
-import helper.UserUtils;
-import set.Course;
-import set.CourseSection;
-import set.Module;
-import set.NotificationSet;
-import set.forum.Discussion;
+import crux.bphc.cms.activities.TokenActivity;
+import crux.bphc.cms.helper.CourseDataHandler;
+import crux.bphc.cms.helper.CourseRequestHandler;
+import crux.bphc.cms.helper.UserAccount;
+import crux.bphc.cms.helper.UserUtils;
+import crux.bphc.cms.models.Course;
+import crux.bphc.cms.models.CourseSection;
+import crux.bphc.cms.models.Module;
+import crux.bphc.cms.models.NotificationSet;
+import crux.bphc.cms.models.forum.Discussion;
 
 import static androidx.core.app.NotificationCompat.PRIORITY_DEFAULT;
-import static helper.HtmlTextView.parseHtml;
+import static crux.bphc.cms.helper.HtmlTextView.parseHtml;
 
 public class NotificationService extends JobService {
     private static boolean mJobRunning;
@@ -46,7 +44,7 @@ public class NotificationService extends JobService {
     public static final int CMS_JOB_ID = 0;
 
     /**
-     * Static helper method called in order to build and start the repeating job.
+     * Static crux.bphc.cms.helper method called in order to build and start the repeating job.
      * NOT called by the service itself.
      */
     public static void startService(Context context, boolean replace) {

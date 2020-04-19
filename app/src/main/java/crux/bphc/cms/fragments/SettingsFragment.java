@@ -4,19 +4,13 @@ package crux.bphc.cms.fragments;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.SwitchCompat;
 
-import androidx.preference.CheckBoxPreference;
-import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.SwitchPreference;
 
 import app.MyApplication;
-import butterknife.BindView;
-import butterknife.ButterKnife;
 import crux.bphc.cms.R;
-import helper.UserAccount;
+import crux.bphc.cms.helper.UserAccount;
 
 public class SettingsFragment extends PreferenceFragmentCompat {
 

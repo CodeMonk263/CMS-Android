@@ -27,16 +27,16 @@ import java.util.Locale;
 
 import app.MyApplication;
 import crux.bphc.cms.R;
-import helper.ClickListener;
-import helper.CourseRequestHandler;
-import helper.CourseRequestHandler.CallBack;
-import helper.HtmlTextView;
-import helper.MoodleServices;
+import crux.bphc.cms.helper.ClickListener;
+import crux.bphc.cms.helper.CourseRequestHandler;
+import crux.bphc.cms.helper.CourseRequestHandler.CallBack;
+import crux.bphc.cms.helper.HtmlTextView;
+import crux.bphc.cms.helper.MoodleServices;
 import io.realm.Realm;
 import io.realm.RealmResults;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
-import set.forum.Discussion;
+import crux.bphc.cms.models.forum.Discussion;
 
 import static app.Constants.API_URL;
 

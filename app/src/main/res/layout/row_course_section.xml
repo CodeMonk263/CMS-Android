@@ -32,7 +32,7 @@
             android:textStyle="bold" />
     </LinearLayout>
 
-    <helper.HtmlTextView
+    <crux.bphc.cms.helper.HtmlTextView
         android:clickable="true"
         android:focusable="true"
         android:visibility="gone"

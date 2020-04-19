@@ -22,13 +22,11 @@ import java.util.List;
 
 import app.MyApplication;
 import crux.bphc.cms.R;
-import helper.ClickListener;
-import helper.MyFileManager;
+import crux.bphc.cms.helper.ClickListener;
+import crux.bphc.cms.helper.MyFileManager;
 import io.realm.Realm;
-import set.Content;
-import set.Module;
-
-import static app.Constants.API_URL;
+import crux.bphc.cms.models.Content;
+import crux.bphc.cms.models.Module;
 
 public class FolderModuleFragment extends Fragment {
 

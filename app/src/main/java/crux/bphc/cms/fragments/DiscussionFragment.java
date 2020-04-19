@@ -19,11 +19,11 @@ import com.squareup.picasso.Picasso;
 
 import app.MyApplication;
 import crux.bphc.cms.R;
-import helper.HtmlTextView;
-import helper.MyFileManager;
+import crux.bphc.cms.helper.HtmlTextView;
+import crux.bphc.cms.helper.MyFileManager;
 import io.realm.Realm;
-import set.forum.Attachment;
-import set.forum.Discussion;
+import crux.bphc.cms.models.forum.Attachment;
+import crux.bphc.cms.models.forum.Discussion;
 
 
 public class DiscussionFragment extends Fragment implements MyFileManager.Callback {

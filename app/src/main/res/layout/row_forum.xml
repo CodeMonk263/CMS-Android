@@ -77,7 +77,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"/>
 
-        <helper.HtmlTextView
+        <crux.bphc.cms.helper.HtmlTextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:id="@+id/message"

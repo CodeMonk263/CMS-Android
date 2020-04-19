@@ -23,16 +23,16 @@ import java.util.List;
 
 import app.MyApplication;
 import crux.bphc.cms.R;
-import helper.MoodleServices;
+import crux.bphc.cms.helper.MoodleServices;
 import io.realm.Realm;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
-import set.enrol.SelfEnrol;
-import set.search.Contact;
-import set.search.Course;
+import crux.bphc.cms.models.enrol.SelfEnrol;
+import crux.bphc.cms.models.search.Contact;
+import crux.bphc.cms.models.search.Course;
 
 import static app.Constants.API_URL;
 
@@ -187,7 +187,7 @@ public class CourseEnrolFragment extends Fragment {
 
                     CourseSectionFragment courseSectionFragment = CourseSectionFragment
                             .newInstance(TOKEN, course.getId());
-                    set.Course courseSet = new set.Course(course);
+                    crux.bphc.cms.models.Course courseSet = new crux.bphc.cms.models.Course(course);
 
                     Realm realm = MyApplication.getInstance().getRealmInstance();
                     realm.beginTransaction();

@@ -20,17 +20,17 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
-import crux.bphc.cms.CourseDetailActivity;
+import crux.bphc.cms.activities.CourseDetailActivity;
 import crux.bphc.cms.R;
-import helper.ClickListener;
-import helper.MoodleServices;
+import crux.bphc.cms.helper.ClickListener;
+import crux.bphc.cms.helper.MoodleServices;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
-import set.search.Course;
-import set.search.CourseSearch;
+import crux.bphc.cms.models.search.Course;
+import crux.bphc.cms.models.search.CourseSearch;
 
 import static app.Constants.API_URL;
 import static app.Constants.COURSE_PARCEL_INTENT_KEY;
